@@ -26,8 +26,19 @@
     "node": ">=4"
   },
   "devDependencies": {
+    "@types/ramda": "^0.25.19",
     "ava": "^0.25.0",
+    "bignumber.js": "^6.0.0",
+    "ramda": "^0.25.0",
     "tslint": "^5.9.1",
     "typescript": "^2.7.2"
+  },
+  "ava": {
+    "files": [
+      "dist/**/*.test.js"
+    ],
+    "source": [
+      "src/**/*.{js,jsx,ts}"
+    ]
   }
 }
