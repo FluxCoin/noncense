@@ -1,35 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const padStart = (str, targetLength, padString) => {
-    const stringLength = str.length;
-    if (stringLength === targetLength) {
-        return str;
-    }
-    const stringDiffLength = targetLength - stringLength;
-    let newString = "";
-    for (let i = 1; i <= stringDiffLength; i++) {
-        newString += padString;
-    }
-    return newString + str;
-};
-exports.default = (length) => {
-    if (length === undefined || length < 1) {
-        length = 15;
-    }
-    const maxValue = parseInt(padStart("", length, "9"), 10);
-    let repeat = 0;
+function default_1() {
+    let nonceIncr;
     let last;
     return () => {
-        let nonce = Math.floor(Math.random() * maxValue);
-        if (nonce === last) {
-            repeat++;
+        const now = new Date().getTime();
+        if (now !== last) {
+            nonceIncr = -1;
         }
-        else {
-            repeat = 0;
-            last = nonce;
-        }
-        nonce += repeat;
-        return padStart(`${nonce}`, length, "0");
+        last = now;
+        nonceIncr++;
+        const padding = nonceIncr < 10
+            ? "000"
+            : nonceIncr < 100 ? "00" : nonceIncr < 1000 ? "0" : "";
+        return now + padding + nonceIncr;
     };
-};
+}
+exports.default = default_1;
 //# sourceMappingURL=index.js.map
