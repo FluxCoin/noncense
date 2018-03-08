@@ -1,24 +1,26 @@
-# Welcome
+# Noncense
+
+It makes nonces.
 
 ## Install
 
 ```bash
-npm i nonce-ts
+npm i noncense
 ```
 
 or
 
 ```bash
-yarn add nonce-ts
+yarn add noncense
 ```
 
 ## Usage
 
 ```javascript
-const Nonce = require('nonce-ts');
-const nonce = Nonce(9); # define the length of the string
+const Noncense = require('noncense');
+const nonce = Noncence();
 
-nonce(); # '802354675'
-nonce(); # '296876554'
-nonce(); # '269567223'
+nonce(); # '15205498628380000'
+nonce(); # '15205498646930000'
+nonce(); # '15205498652060000'
 ```

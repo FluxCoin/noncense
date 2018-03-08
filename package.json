@@ -1,5 +1,5 @@
 {
-  "name": "nonce-ts",
+  "name": "noncense",
   "version": "0.0.1",
   "description": "nonce value generator",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/fluxcoin/nonce-fast.git"
+    "url": "git+ssh://git@github.com/fluxcoin/noncense.git"
   },
   "keywords": [
     "nonce",
@@ -19,9 +19,9 @@
   "author": "Fluxcoin (https://github.com/fluxcoin)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fluxcoin/nonce-fast/issues"
+    "url": "https://github.com/fluxcoin/noncense/issues"
   },
-  "homepage": "https://github.com/fluxcoin/nonce-fast#readme",
+  "homepage": "https://github.com/fluxcoin/noncense#readme",
   "engines": {
     "node": ">=4"
   },
