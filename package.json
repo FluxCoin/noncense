@@ -1,0 +1,33 @@
+{
+  "name": "nonce-ts",
+  "version": "0.0.1",
+  "description": "nonce value generator",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "rm -rf dist && tsc && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fluxcoin/nonce-fast.git"
+  },
+  "keywords": [
+    "nonce",
+    "generator"
+  ],
+  "author": "Fluxcoin (https://github.com/fluxcoin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fluxcoin/nonce-fast/issues"
+  },
+  "homepage": "https://github.com/fluxcoin/nonce-fast#readme",
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  }
+}
